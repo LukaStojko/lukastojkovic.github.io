@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Behind Closed Doors",
+    "description": "A first person horror game built in Unreal Engine with Blueprints and C++ with myself as the only programmer.",
+    "link": "https://stratsman312.itch.io/behind-closed-doors",
+    "technologies": ["Unreal", "C++", "AI Programming", "Puzzle Design", "Audio Design", "UI Design"],
+    "thumbnail": "images/projects/Behind_Closed_Door_Menu_Text.png"
+  },
+  {
+    "title": "Hell in a Very Small Place",
+    "description": "A 2D top down shooter developed completely by myself. Built in a custom C# Engine with the SFML Library.",
+    "link": "https://portfolio.fh-salzburg.ac.at/projects/2022-hell-in-a-very-small-place",
+    "technologies": ["Game Engine", "C#", "SFML", "Level Design", "Audio Design", "2D Art"],
+    "thumbnail": "images/projects/hell-in-a-very-small-place-icon.png"
+  },
+  {
+    "title": "Defend Ops",
+    "description": "A 2D tower defense game built in a custom C++ Engine with the SFML Library.",
+    "link": "https://portfolio.fh-salzburg.ac.at/projects/2023-defend-ops",
+    "technologies": ["Game Engine", "C++", "SFML", "AI Programming","Level Design", "Audio Design", "2D Art"],
+    "thumbnail": "images/projects/defend-ops.png"
+  },
+  {
+    "title": "Suicide Cigarette",
+    "description": "A platformer game in Unity for a Game Jam. Implemented checkpoint system and cigarette movement logic.",
+    "link": "https://stratsman312.itch.io/suicide-cigarette",
+    "technologies": ["Unity", "C#", "Game Design", "UI Design"],
+    "thumbnail": "images/projects/suicide-cigarette.png"
+  },
+  {
+    "title": "Nanopunk",
+    "description": "A 3D Shooter where you play as a nanobot in a human body. Built in Unity. Implemented enemy AI, and worked with Blender to design and created the level.",
+    "link": "https://portfolio.fh-salzburg.ac.at/projects/2023-nanopunk",
+    "technologies": ["Unity", "C#", "AI Programming", "Level Design", "Asset Design", "UI Design"],
+    "thumbnail": "images/projects/nanopunk.png"
+  }
+]

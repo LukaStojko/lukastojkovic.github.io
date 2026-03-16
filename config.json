@@ -1,0 +1,23 @@
+{
+  "name": "Luka Stojković",
+  "email": "stojkovicluka244@gmail.com",
+  "github": "https://github.com/LukaStojko",
+  "linkedin": "https://www.linkedin.com/in/luka-stojkovi%C4%87-3bb82125b/",
+  "itchio": "https://stratsman312.itch.io/",
+  "profileImage": {
+    "src": "images/config/foto.png",
+    "position": "left",
+    "size": "medium",
+    "borderWidth": "4px",
+    "shadow": "glow",
+    "objectPosition": "center top",
+    "scale": "1.0"
+  },
+  "title": "Game Programmer",
+  "footerTitle": "Game Programmer",
+  "links": {
+    "github": "GitHub Profile",
+    "linkedin": "LinkedIn Profile",
+    "itchio": "itch.io Profile"
+  }
+}

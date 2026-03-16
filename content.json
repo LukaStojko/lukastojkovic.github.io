@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "about": "About",
+    "projects": "Projects", 
+    "contact": "Contact"
+  },
+  "sections": {
+    "about": {
+      "title": "About Me",
+      "content": "Passionate game programmer with specialization in C++ and Unreal Engine with a side of C# and Unity.\nI love creating immersive gameplay experiences, optimizing performance, and solving complicated technical challenges.\nSpecializing in gameplay systems, physics programming, and AI programming.",
+      "alignment": "center"
+    },
+    "projects": {
+      "title": "Projects",
+      "alignment": "left"
+    },
+    "contact": {
+      "title": "Contact",
+      "alignment": "center",
+      "fontSize": "xlarge",
+      "labels": {
+        "email": "Email:",
+        "github": "GitHub:",
+        "linkedin": "LinkedIn:",
+        "itchio": "Itch.io:"
+      }
+    }
+  },
+  "projectCard": {
+    "viewButton": "View Project →"
+  },
+  "meta": {
+    "pageTitle": "Luka Stojković Portfolio",
+    "favicon": "images/content/favicon.ico"
+  }
+}
