@@ -42,9 +42,9 @@
         "type": "image"
       },
       {
-        "src": "images/projects/BCD/BCD_Trailer.mp4",
-        "caption": "Game trailer",
-        "type": "video"
+        "src": "https://youtu.be/l0QyyWYfHMM",
+        "caption": "Gameplay Trailer (YouTube)",
+        "type": "youtube"
       }
     ]
   },
@@ -95,9 +95,9 @@
         "type": "image"
       },
       {
-        "src": "images/projects/Hell/gameplay.mp4",
+        "src": "https://youtu.be/h5u9u0xT_Ec",
         "caption": "Gameplay Footage",
-        "type": "video"
+        "type": "youtube"
       }
     ]
   },
@@ -137,9 +137,9 @@
     "sourceCode": "https://github.com/LukaStojko/defend-ops",
     "images": [
       {
-        "src": "images/projects/DefendOps/gameplay.mp4",
+        "src": "https://youtu.be/e20FBL9nBvs",
         "caption": "Gameplay Footage",
-        "type": "video"
+        "type": "youtube"
       }
     ]
   },

@@ -2,6 +2,26 @@
 const urlParams = new URLSearchParams(window.location.search);
 const projectId = urlParams.get('id');
 
+// YouTube ID extraction function
+function extractYouTubeId(url) {
+    if (!url) return null;
+    
+    // Handle different YouTube URL formats
+    const patterns = [
+        /youtube\.com\/watch\?v=([^&]+)/,           // youtube.com/watch?v=ID
+        /youtube\.com\/embed\/([^?]+)/,            // youtube.com/embed/ID
+        /youtu\.be\/([^?]+)/,                     // youtu.be/ID
+        /youtube\.com\/v\/([^?]+)/                  // youtube.com/v/ID
+    ];
+    
+    for (const pattern of patterns) {
+        const match = url.match(pattern);
+        if (match) return match[1];
+    }
+    
+    return null;
+}
+
 // Load project data
 Promise.all([
     fetch("content.json").then(response => response.json()),
@@ -74,7 +94,25 @@ Promise.all([
     if (project.images && project.images.length > 0) {
         document.getElementById("gallery-title").textContent = content.projectPage?.galleryTitle || "Project Gallery";
         const galleryItems = project.images.map(media => {
-            if (media.type === 'video' || media.src.endsWith('.mp4') || media.src.endsWith('.webm') || media.src.endsWith('.ogg')) {
+            if (media.type === 'youtube' || (media.src && media.src.includes('youtube.com'))) {
+                // Extract YouTube video ID
+                const videoId = extractYouTubeId(media.src);
+                if (videoId) {
+                    return `
+                        <div class="gallery-item gallery-video">
+                            <iframe 
+                                src="https://www.youtube.com/embed/${videoId}" 
+                                title="${media.caption || 'Project video'}"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                            <div class="caption">${media.caption || ''}</div>
+                        </div>
+                    `;
+                }
+            } else if (media.type === 'video' || media.src.endsWith('.mp4') || media.src.endsWith('.webm') || media.src.endsWith('.ogg')) {
                 return `
                     <div class="gallery-item gallery-video">
                         <video src="${media.src}" alt="${media.caption || 'Project video'}" controls loading="lazy">
