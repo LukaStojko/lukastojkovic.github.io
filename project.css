@@ -1,0 +1,215 @@
+/* Project Page Specific Styles */
+
+.project-header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 60px 40px;
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid #ff6b6b;
+}
+
+.project-header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.project-header-content .tech-tags {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #ff6b6b;
+    margin: 0 auto 30px auto;
+    display: block;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.back-link {
+    background: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 107, 107, 0.5);
+}
+
+.back-link:hover {
+    background: rgba(255, 107, 107, 0.3);
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 107, 107, 0.8);
+    transform: translateX(-5px);
+}
+
+#project-description, #project-gallery, #project-features, #project-technologies, #project-links {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: #000;
+}
+
+.gallery-video {
+    position: relative;
+}
+
+.gallery-video video::-webkit-media-controls-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.gallery-item .caption {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #4ecdc4;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#features-list, #technologies-list, #project-links-container {
+    display: grid;
+    gap: 15px;
+}
+
+.feature-item, .technology-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ff6b6b;
+}
+
+.feature-item h4, .technology-item h4 {
+    color: #ff6b6b;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.feature-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Compact layout for features and technologies */
+#features-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.technology-item {
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.5);
+    border-left: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.technology-item:hover {
+    background: rgba(255, 107, 107, 0.3);
+    transform: scale(1.05);
+}
+
+.technology-item h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #4ecdc4;
+}
+
+.project-link-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #4ecdc4;
+    transition: all 0.3s ease;
+}
+
+.project-link-item:hover {
+    background: rgba(78, 205, 196, 0.1);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.project-link-item .link-icon {
+    font-size: 24px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.project-link-item .link-text {
+    flex: 1;
+}
+
+.project-link-item .link-description {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .project-hero-image {
+        height: 250px;
+    }
+    
+    .project-header {
+        padding: 40px 20px;
+    }
+}

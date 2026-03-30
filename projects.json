@@ -1,37 +1,225 @@
 [
   {
+    "id": "behind-closed-doors",
     "title": "Behind Closed Doors",
     "description": "A first person horror game built in Unreal Engine with Blueprints and C++ with myself as the only programmer.",
     "link": "https://stratsman312.itch.io/behind-closed-doors",
-    "technologies": ["Unreal", "C++", "AI Programming", "Puzzle Design", "Audio Design", "UI Design"],
-    "thumbnail": "images/projects/Behind_Closed_Door_Menu_Text.png"
+    "highlight": true,
+    "image": "images/projects/Behind_Closed_Door_Menu_Text.png",
+    "imageSize": {
+      "width": "100%",
+      "maxWidth": "800px",
+      "height": "400px"
+    },
+    "fullDescription": "Behind Closed Doors is a psychological horror game that puts players in an abandoned facility filled with dark secrets. As the sole programmer on this project, I implemented complex AI behaviors, atmospheric lighting systems, and interactive puzzle mechanics using both Unreal Engine Blueprints and C++. The game features dynamic sound design, immersive environmental storytelling, and tension-building gameplay mechanics that keep players on edge throughout their journey.\n\nThis project represents what I currently consider the peak of my work, both technically and creatively. It stands as my pride and joy, not only because of the systems I implemented, but because of how well all elements came together into a cohesive and immersive experience. Working alongside a dedicated 3D and lighting artist allowed the project to reach a level of visual and atmospheric quality that I could not have achieved alone.\n\nThis collaboration made it possible to fully realize the artistic vision of the game. While I focused on programming the underlying systems—AI behavior, interactivity, and gameplay flow—the artist brought the world to life through carefully crafted environments, lighting, and visual storytelling. The synergy between code and art was essential in building tension and delivering the intended psychological horror experience.\n\nThroughout development, we continuously refined ideas, iterated on mechanics, and aligned technical implementation with artistic direction. This process not only elevated the final result but also taught me the importance of clear communication and collaboration in game development. The end product reflects a balance between technical depth and artistic expression, making it a project I am especially proud to showcase.",
+    "features": [
+      {
+        "title": "Advanced AI System",
+        "description": "Implemented sophisticated enemy AI with patrol patterns, search behaviors, and dynamic response systems using C++ and Behavior Trees."
+      },
+      {
+        "title": "Interactive Puzzles",
+        "description": "Created complex environmental puzzles with multiple solutions and state management using Blueprint visual scripting."
+      },
+      {
+        "title": "Audio Design",
+        "description": "Implemented spatial audio system with dynamic sound attenuation and reactive audio cues based on game events."
+      }
+    ],
+    "technologies": ["Unreal Engine", "C++", "Blueprints", "AI Programming", "Puzzle Design", "Audio Design", "UI Design"],
+    "thumbnail": "images/projects/Behind_Closed_Door_Menu_Text.png",
+    "demo": "https://stratsman312.itch.io/behind-closed-doors",
+    "sourceCode": "https://github.com/LukaStojko/behind-closed-doors",
+    "images": [
+      {
+        "src": "images/projects/BCD/bcd_menu.png",
+        "caption": "Main menu screen showcasing the atmospheric horror aesthetic",
+        "type": "image"
+      },
+      {
+        "src": "images/projects/BCD/bcd_monster.png",
+        "caption": "Monster and AI",
+        "type": "image"
+      },
+      {
+        "src": "images/projects/BCD/BCD_Trailer.mp4",
+        "caption": "Game trailer",
+        "type": "video"
+      }
+    ]
   },
   {
+    "id": "hell-in-a-very-small-place",
     "title": "Hell in a Very Small Place",
     "description": "A 2D top down shooter developed completely by myself. Built in a custom C# Engine with the SFML Library.",
-    "link": "https://portfolio.fh-salzburg.ac.at/projects/2022-hell-in-a-very-small-place",
-    "technologies": ["Game Engine", "C#", "SFML", "Level Design", "Audio Design", "2D Art"],
-    "thumbnail": "images/projects/hell-in-a-very-small-place-icon.png"
+    "link": "https://stratsman312.itch.io/hell-in-a-very-small-place",
+    "highlight": true,
+    "image": "images/projects/hell-in-a-very-small-place-icon.png",
+    "imageSize": {
+      "width": "100%",
+      "maxWidth": "800px",
+      "height": "400px"
+    },
+    "fullDescription": "Hell in a Very Small Place is a 2D top-down shooter that I developed completely from scratch, including the game engine itself. Using C# and the SFML library, I built a custom game engine with entity-component system, collision detection and a complete game loop. The game features fast-paced action, multiple weapon types, enemy waves, and a progression system that challenges players to survive increasingly difficult encounters. \n\nThis project marked my very first complete game development experience, which meant that nearly every system and feature required extensive research and experimentation. From the basics of structuring a game loop to more advanced topics like entity-component systems and efficient collision handling, I had to learn and implement each concept step by step. Much of the development process involved reading documentation, exploring forums, and testing different approaches to understand what worked best in practice.\n\nBecause I wasn’t relying on an existing engine, I also had to think carefully about architecture and design decisions early on. This included managing game state, handling input in a responsive way, and ensuring that performance remained stable even as the number of entities on screen increased. Debugging became a crucial part of the process, teaching me how to trace issues systematically and refine my code over time.\n\nBuilding everything from scratch gave me a deep understanding of how game engines function under the hood. It also pushed me to develop problem-solving skills and persistence, as many features required multiple iterations before reaching a satisfying result. Despite the challenges, the process was highly rewarding, as each completed system contributed directly to a fully playable and cohesive game experience.",
+    "features": [
+      {
+        "title": "Custom Game Engine",
+        "description": "Built complete game engine from scratch using C# and SFML, including rendering, input handling, and audio systems."
+      },
+      {
+        "title": "Entity Component System",
+        "description": "Implemented ECS architecture for flexible game object management and efficient memory usage."
+      },
+      {
+        "title": "Decision Tree AI",
+        "description": "Implemented decision tree architecture for enemy behavior and implemented pathfinding."
+      },
+      {
+        "title": "2D Art Asset Creation",
+        "description": "Created all gameplay visual assets including characters, environments, and UI elements from scratch."
+      }
+    ],
+    "technologies": ["C#", "SFML", "Game Engine Development", "Entity Component System", "Level Design"],
+    "thumbnail": "images/projects/hell-in-a-very-small-place-icon.png",
+    "demo": "https://portfolio.fh-salzburg.ac.at/projects/2022-hell-in-a-very-small-place",
+    "sourceCode": "https://stratsman312.itch.io/hell-in-a-very-small-place",
+    "images": [
+      {
+        "src": "images/projects/Hell/j2voal484a5dfrjpnsr5ar4xz7jv.jpg",
+        "caption": "The Player with a rifle",
+        "type": "image"
+      },
+      {
+        "src": "images/projects/Hell/xdoltl8hauuswxugx6qurdi141ny.jpg",
+        "caption": "Enemy fortified position with a health pack",
+        "type": "image"
+      },
+      {
+        "src": "images/projects/Hell/gameplay.mp4",
+        "caption": "Gameplay Footage",
+        "type": "video"
+      }
+    ]
   },
   {
+    "id": "defend-ops",
     "title": "Defend Ops",
     "description": "A 2D tower defense game built in a custom C++ Engine with the SFML Library.",
     "link": "https://portfolio.fh-salzburg.ac.at/projects/2023-defend-ops",
-    "technologies": ["Game Engine", "C++", "SFML", "AI Programming","Level Design", "Audio Design", "2D Art"],
-    "thumbnail": "images/projects/defend-ops.png"
+    "image": "images/projects/defend-ops.png",
+    "imageSize": {
+      "width": "100%",
+      "maxWidth": "800px",
+      "height": "400px"
+    },
+    "fullDescription": "Defend Ops is a strategic 2D tower defense game that I developed using a custom C++ game engine built with SFML. The game features multiple tower types with unique abilities, enemy waves with increasing difficulty, and a resource management system that requires strategic planning. I implemented pathfinding algorithms for enemy movement, collision detection systems, and an upgrade system for towers.",
+    "features": [
+      {
+        "title": "Custom C++ Engine",
+        "description": "Built complete game engine from scratch using C++ and SFML, including rendering, audio, and input systems."
+      },
+      {
+        "title": "Pathfinding System",
+        "description": "Implemented A* pathfinding algorithm for intelligent enemy movement and route optimization."
+      },
+      {
+        "title": "Tower Upgrade System",
+        "description": "Created comprehensive upgrade mechanics with multiple upgrade paths and balancing."
+      },
+      {
+        "title": "Wave Management",
+        "description": "Designed progressive difficulty system with varied enemy types and boss encounters."
+      }
+    ],
+    "technologies": ["C++", "SFML", "Game Engine Development", "Pathfinding", "Tower Defense", "Level Design", "Audio Design", "2D Art"],
+    "thumbnail": "images/projects/defend-ops.png",
+    "demo": "https://portfolio.fh-salzburg.ac.at/projects/2023-defend-ops",
+    "sourceCode": "https://github.com/LukaStojko/defend-ops",
+    "images": [
+      {
+        "src": "images/projects/DefendOps/gameplay.mp4",
+        "caption": "Gameplay Footage",
+        "type": "video"
+      }
+    ]
   },
   {
+    "id": "zero-grid",
+    "title": "Zero Grid",
+    "description": "A top down tactical turn-based grid-based game. Responsible for core gameplay loop, UI design and implementation, audio design, and 3D model integration.",
+    "link": "https://portfolio.fh-salzburg.ac.at/projects/2025-zero-grid",
+    "image": "images/projects/ZeroGrid/zero_grid.png",
+    "imageSize": {
+      "width": "100%",
+      "maxWidth": "800px",
+      "height": "400px"
+    },
+    "fullDescription": "Zero Grid is a tactical turn-based grid-based game developed in Unity, inspired by my love for XCOM-like strategy games. The project was designed as a proof of concept rather than a full-scale production, focusing on experimenting with core mechanics and systems that define the genre. A key feature is its formation system, allowing players to strategically position units to maximize their effectiveness and trigger coordinated abilities.",
+    "features": [
+      {
+        "title": "Core Gameplay Loop",
+        "description": "Implemented the core gameplay loop including turn-based gameplay, formation system, and joint ability triggers."
+      },
+      {
+        "title": "UI Design and Implementation",
+        "description": "Created the user interface for the game, including the visual assets using Adobe Photoshop and the functionality of the UI."
+      },
+      {
+        "title": "3D Model Integration",
+        "description": "Creaeted custom rigged 3D models using Blender and Auto-Rig Pro and integrated them into the game using Unity's animation system."
+      }
+    ],
+    "technologies": ["Unity", "C#", "3D Programming", "AI Programming", "Blender", "Level Design", "Asset Design", "UI Design"],
+    "thumbnail": "images/projects/ZeroGrid/zero_grid.png",
+    "demo": "https://portfolio.fh-salzburg.ac.at/projects/2025-zero-grid",
+    "sourceCode": "https://github.com/LukaStojko/zero-grid",
+    "images": [
+      {
+        "src": "images/projects/ZeroGrid/zero_grid_ui.png",
+        "caption": "Main menu screen",
+        "type": "image"
+      },
+      {
+        "src": "images/projects/ZeroGrid/screencap5.jpeg",
+        "caption": "Turn Change",
+        "type": "image"
+      },
+      {
+        "src": "images/projects/ZeroGrid/gameplay.mp4",
+        "caption": "Gameplay Footage",
+        "type": "video"
+      }
+    ]
+  },
+  {
+    "id": "suicide-cigarette",
     "title": "Suicide Cigarette",
     "description": "A platformer game in Unity for a Game Jam. Implemented checkpoint system and cigarette movement logic.",
     "link": "https://stratsman312.itch.io/suicide-cigarette",
-    "technologies": ["Unity", "C#", "Game Design", "UI Design"],
-    "thumbnail": "images/projects/suicide-cigarette.png"
-  },
-  {
-    "title": "Nanopunk",
-    "description": "A 3D Shooter where you play as a nanobot in a human body. Built in Unity. Implemented enemy AI, and worked with Blender to design and created the level.",
-    "link": "https://portfolio.fh-salzburg.ac.at/projects/2023-nanopunk",
-    "technologies": ["Unity", "C#", "AI Programming", "Level Design", "Asset Design", "UI Design"],
-    "thumbnail": "images/projects/nanopunk.png"
+    "image": "images/projects/suicide-cigarette.png",
+    "imageSize": {
+      "width": "100%",
+      "maxWidth": "800px",
+      "height": "400px"
+    },
+    "fullDescription": "Suicide Cigarette is a unique platformer game created for a game jam with a distinctive cigarette-based movement mechanic. Developed in Unity, this game features innovative gameplay where the player controls a character that moves like a cigarette, creating challenging and humorous platforming challenges. I implemented a robust checkpoint system and responsive controls that work with the unconventional movement mechanics.",
+    "features": [
+      {
+        "title": "Unique Movement System",
+        "description": "Designed and implemented innovative cigarette-based movement mechanics with physics integration."
+      },
+      {
+        "title": "Checkpoint System",
+        "description": "Created robust save system with multiple checkpoints and progress tracking."
+      },
+      {
+        "title": "Game Jam Optimization",
+        "description": "Rapid development under time constraints with focus on core gameplay mechanics."
+      }
+    ],
+    "technologies": ["Unity", "C#", "Game Design", "UI Design", "Physics Programming"],
+    "thumbnail": "images/projects/suicide-cigarette.png",
+    "demo": "https://stratsman312.itch.io/suicide-cigarette",
+    "sourceCode": "https://github.com/LukaStojko/suicide-cigarette"
   }
 ]

@@ -166,24 +166,29 @@ fetch("content.json")
 
 
 // Load projects
-fetch("content.json")
+fetch("config.json")
   .then(response => response.json())
-  .then(content => {
-    return fetch("projects.json")
+  .then(config => {
+    return fetch("content.json")
       .then(response => response.json())
-      .then(projects => ({ content, projects }));
+      .then(content => {
+        return fetch("projects.json")
+          .then(response => response.json())
+          .then(projects => ({ config, content, projects }));
+      });
   })
-  .then(({ content, projects }) => {
+  .then(({ config, content, projects }) => {
 
     const container = document.getElementById("projects-container");
 
     projects.forEach(project => {
 
       const card = document.createElement("div");
-      card.className = "project";
+      card.className = project.highlight ? "project highlighted" : "project";
 
       const techTags = project.technologies ? project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('') : '';
       const thumbnail = project.thumbnail ? `<img src="${project.thumbnail}" alt="${project.title}" class="project-thumbnail">` : '';
+      const highlightBadge = project.highlight ? `<div class="project-highlight"><img src="${config.highlightIcon}" alt="Highlighted Project"></div>` : '';
 
       card.innerHTML = `
         ${thumbnail}
@@ -191,8 +196,9 @@ fetch("content.json")
           <h3>${project.title}</h3>
           <p>${project.description}</p>
           ${techTags ? `<div class="tech-tags">${techTags}</div>` : ''}
-          <a href="${project.link}" target="_blank">${content.projectCard.viewButton}</a>
+          <a href="project.html?id=${project.id || project.title.replace(/\s+/g, '-').toLowerCase()}" class="view-project-btn">${content.projectCard.viewButton}</a>
         </div>
+        ${highlightBadge}
       `;
 
       container.appendChild(card);

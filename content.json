@@ -29,6 +29,20 @@
   "projectCard": {
     "viewButton": "View Project →"
   },
+  "projectPage": {
+    "descriptionTitle": "About This Project",
+    "galleryTitle": "Project Gallery",
+    "featuresTitle": "Key Contributions", 
+    "technologiesTitle": "Technologies Used",
+    "linksTitle": "Project Links",
+    "images": {
+      "hero": {
+        "width": "100%",
+        "maxWidth": "800px",
+        "height": "400px"
+      }
+    }
+  },
   "meta": {
     "pageTitle": "Luka Stojković Portfolio",
     "favicon": "images/content/favicon.ico"
